@@ -4,9 +4,12 @@ var canvas = document.getElementById("canvas"),
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+const screenWidth = screen.width;
+const screenHeight = screen.height;
+
 var stars = [], // Array that contains the stars
     FPS = 60, // Frames per second
-    x = 250, // Number of stars
+    x = Math.floor(250 * (screenHeight + screenWidth)/(1920+1080)), // Number of stars
     mouse = {
       x: 0,
       y: 0
