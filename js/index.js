@@ -92,8 +92,9 @@ function update() {
 }
 
 canvas.addEventListener('mousemove', function(e){
-  mouse.x = e.clientX;
-  mouse.y = e.clientY;
+  const rect = canvas.getBoundingClientRect();
+  mouse.x = e.clientX - rect.left;
+  mouse.y = e.clientY - rect.top;
 });
 
 // Update and draw
