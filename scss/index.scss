@@ -71,6 +71,8 @@ $white: #fff;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
+  transition: ease-in-out 1s;
+
   width: 100%;
   @media (min-width: 600px) {
     margin: 0 1em 2em;
@@ -80,6 +82,7 @@ $white: #fff;
     text-decoration: none;
   }
 }
+
 
 .about-btn {
   letter-spacing: 0;
