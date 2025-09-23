@@ -61,3 +61,7 @@ if (Math.random() > 0.9) {
     writerType()
 } else {typeWriter()}
 
+
+document.getElementById("buttons").innerHTML += '<a class="btn about-btn" href="/about.html"><span>About</span></a>'
+document.getElementById("buttons").innerHTML += '<a class="btn about-btn" href="/projects.html"><span>Projects</span></a>'
+

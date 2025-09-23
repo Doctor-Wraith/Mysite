@@ -1,7 +1,12 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #020024;
-  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(0, 140, 255) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgb(0, 140, 255) 100%
+  );
 }
 
 * {
@@ -42,6 +47,9 @@ body {
   font-weight: 700;
 }
 
+$red: #e1332d;
+$white: #fff;
+
 .buttons {
   margin: 50px 0px;
   display: flex;
@@ -54,6 +62,7 @@ body {
 .btn {
   color: #fff;
   cursor: pointer;
+  // display: block;
   font-size: 16px;
   font-weight: 400;
   line-height: 45px;
@@ -63,14 +72,13 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
-}
-@media (min-width: 600px) {
-  .btn {
+  @media (min-width: 600px) {
     margin: 0 1em 2em;
   }
-}
-.btn:hover {
-  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .about-btn {
@@ -85,7 +93,7 @@ body {
 .about-btn:after,
 .about-btn:before {
   backface-visibility: hidden;
-  border: 1px solid rgba(255, 255, 255, 0);
+  border: 1px solid rgba(#fff, 0);
   bottom: 0px;
   content: " ";
   display: block;
@@ -108,5 +116,3 @@ body {
   top: 0;
   width: 70%;
 }
-
-/*# sourceMappingURL=index.css.map */
