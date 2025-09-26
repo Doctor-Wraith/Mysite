@@ -1,0 +1,18 @@
+body {
+  background: black;
+  color: white;
+}
+
+.wrapper {
+  position: relative;
+  margin: 50px 10%;
+  padding: 3rem;
+}
+
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=about.css.map */
