@@ -1,6 +1,5 @@
 html {
   scroll-behavior: smooth;
-  background: linear-gradient(90deg, #2a1ad8 0%, #4e26e2 20%, #7231ec 40%, #953df5 60%, #b948ff 100%);
 }
 
 body::-webkit-scrollbar {
@@ -19,6 +18,8 @@ body {
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(90deg, #2a1ad8 0%, #4e26e2 20%, #7231ec 40%, #953df5 60%, #b948ff 100%);
+  overflow-x: hidden;
 }
 
 .title {
